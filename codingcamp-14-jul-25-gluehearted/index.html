@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourCompany</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">YourCompany</div>
+            <nav>
+                <ul id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#message">Message</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="menuToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Hi <span id="userName"></span>, Welcome to Our Website</h1>
+        <p>We build smart solutions for a smarter future.</p>
+    </section>
+
+    <section id="profile">
+        <h2>Our Profile</h2>
+        <p>
+            We are a tech-forward company providing software solutions across industries including finance, education,
+            and logistics.
+        </p>
+        <div class="headquarters">
+            <div>
+                <div class="circle">Jakarta</div>
+                <p>Main HQ</p>
+            </div>
+            <div>
+                <div class="circle">Bandung</div>
+                <p>R&D Center</p>
+            </div>
+            <div>
+                <div class="circle">Surabaya</div>
+                <p>Support Office</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover how we help businesses grow with technology.</p>
+        <div class="services-grid">
+            <div class="card fade-in-up">
+                <div class="service-icon">💻</div>
+                <h3>Software Development</h3>
+                <p>Custom apps tailored for your business processes.</p>
+            </div>
+            <div class="card fade-in-up">
+                <div class="service-icon">☁️</div>
+                <h3>Cloud Solutions</h3>
+                <p>Secure, scalable cloud infrastructure for all needs.</p>
+            </div>
+            <div class="card fade-in-up">
+                <div class="service-icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Actionable insights from your business data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <p>Our brilliant developers, designers, and project managers.</p>
+        <div class="team-grid">
+            <div class="card fade-in-up">
+                <img src="img/team1.jpg" alt="John Doe" class="team-photo">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="img/team2.jpg" alt="Jane Smith" class="team-photo">
+                <h3>Jane Smith</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="img/team3.jpg" alt="Michael Lee" class="team-photo">
+                <h3>Michael Lee</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </section>
+    <section id="message">
+        <h2>Message Us</h2>
+        <form id="messageForm">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <textarea id="messageText" placeholder="Your message here..." rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email us at contact@yourcompany.com or call +62 812 3456 7890</p>
+    </section>
+
+    <footer>
+        <p>© 2025 YourCompany. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
