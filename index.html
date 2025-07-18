@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">DreamHub</div>
+            <nav>
+                <ul id="navLinks">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#team">Tim</a></li>
+                    <li><a href="#message">Pesan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <button id="menuToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Halo <span id="userName"></span>, Selamat Datang di Website Kami</h1>
+        <p>Kami membangun solusi cerdas untuk masa depan yang lebih pintar.</p>
+    </section>
+
+    <section id="profile">
+        <h2>Profil Kami</h2>
+        <p>
+            Kami adalah perusahaan teknologi inovatif yang menghadirkan solusi perangkat lunak paling lengkap dan modern
+            untuk berbagai industri, termasuk keuangan, pendidikan, dan logistik.
+        </p>
+        <div class="headquarters">
+            <div class="card fade-in-up">
+                <img src="assets/img4.webp" alt="Jakarta HQ" class="hq-photo">
+                <h3>Jakarta</h3>
+                <p>Kantor Pusat</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="assets/img5.webp" alt="Bandung HQ" class="hq-photo">
+                <h3>Bandung</h3>
+                <p>Pusat Riset & Pengembangan</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="assets/img6.webp" alt="Surabaya HQ" class="hq-photo">
+                <h3>Surabaya</h3>
+                <p>Kantor Dukungan</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <p>Temukan bagaimana kami membantu bisnis bertumbuh melalui teknologi.</p>
+        <div class="services-grid">
+            <div class="card fade-in-up">
+                <div class="service-icon">💻</div>
+                <h3>Pengembangan Perangkat Lunak</h3>
+                <p>Aplikasi khusus yang disesuaikan dengan proses bisnis Anda.</p>
+            </div>
+            <div class="card fade-in-up">
+                <div class="service-icon">☁️</div>
+                <h3>Solusi Cloud</h3>
+                <p>Infrastruktur cloud yang aman dan dapat diskalakan sesuai kebutuhan.</p>
+            </div>
+            <div class="card fade-in-up">
+                <div class="service-icon">📊</div>
+                <h3>Analitik Data</h3>
+                <p>Wawasan yang dapat ditindaklanjuti dari data bisnis Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Kenali Tim Kami</h2>
+        <p>Para developer, desainer, dan manajer proyek terbaik kami.</p>
+        <div class="team-grid">
+            <div class="card fade-in-up">
+                <img src="assets/img1.webp" alt="David Kurnia" class="team-photo">
+                <h3>David Kurnia</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="assets/img2.webp" alt="Putri Bunga Lestari" class="team-photo">
+                <h3>Putri Bunga Lestari</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="card fade-in-up">
+                <img src="assets/img3.webp" alt="Adi Purnama" class="team-photo">
+                <h3>Adi Purnama</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </section>
+    <section id="message">
+        <h2>Kirim Pesan</h2>
+        <form id="messageForm">
+            <input type="text" id="name" placeholder="Nama" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="tel" id="phone" placeholder="Nomor Telepon" required />
+            <textarea id="messageText" placeholder="Tulis pesan Anda di sini..." rows="4" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email kami di DreamHub@gmail.com atau hubungi +62 812 3456 7890</p>
+    </section>
+
+    <footer>
+        <p>© 2025 DreamHub. Hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
